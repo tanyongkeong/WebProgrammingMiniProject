@@ -1,0 +1,93 @@
+html, body {
+    padding: 0;
+    margin: 0;
+	width: 100%;
+}
+
+html {
+	background-color: #e9ebee;
+}
+
+#banner{
+	z-index:1;		/*banner to front ground*/
+	position:fixed;
+	top:0;
+	left:0;
+	height:6%;
+	padding:1% 5% 1% 1%;
+	width:100%;
+	margin:0;
+	background-color:rgba(122, 226, 104,1.0);
+}
+
+
+#banner img{
+	float:left;
+	width:15%;
+	height:auto;
+	margin-top:-1%;
+	margin-left:2%;
+	-ms-interpolation-mode: bicubic;
+}
+
+#logout {
+	float:right;
+	margin-right:3%;
+    background-color: rgb(255, 148, 130);
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+#logout:hover {
+	background-color:red;
+}
+
+#sort {
+	text-align:center;
+	position:relative;
+	align-items:center; 
+	top:8%;
+	left:0%;
+	margin:3% 3% 10% 3%;
+	width:100%;
+	height:auto;
+}
+
+#list {
+	position:relative;
+	align-items:center; 
+	text-align:center;
+	left:0%;
+	top:10%;
+	margin:0% 0% 0% 30%;
+	width:auto;
+	height:auto;
+	display:block;
+	padding:3%;
+}
+
+#studentTable {
+	position:relative;
+	display:block;	
+}
+
+#Footer{
+	background-color:rgb(209, 203, 202);
+	position:absolute;
+	display:block;
+	bottom:0;
+	width:100%;
+	padding:1%;
+	font-size:0.8em;
+	align-items:center; 
+	text-align:center;
+
+}
+
+
+

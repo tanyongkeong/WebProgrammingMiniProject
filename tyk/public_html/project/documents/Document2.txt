@@ -1,0 +1,25 @@
+public static void main(String[]args)
+ {
+ Cylinder[] obj1=new Cylinder[2];
+
+ for(int i=0;i<2;i++)
+ {
+ obj1[i]=new Cylinder();
+ obj1[i].setRadius(r);
+ System.out.println ("\nRadius="+(i+1));
+ double radius=nextDouble();
+     
+ 
+  obj1[i].setheight(h);
+   System.out.println ("\nHeight="+(i+1));
+   double height=nextDouble();
+     
+     System.out.println ("Area="+(i+1)+"is"+ obj1[i].calArea());
+     System.out.println ("Volume="+(i+1)+"is"+ obj1[i].calVolume());
+    
+     
+ 
+ }
+ /*for(int i=0;i<obj1.length;i++)
+ {obj1[i].Display();}*/
+}

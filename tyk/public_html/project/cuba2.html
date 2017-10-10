@@ -1,0 +1,74 @@
+<?php
+require_once('auth.php');
+require_once('config.php');
+$id=$_SESSION['SESS_MEMBER_ID'];
+$result3 = mysql_query("SELECT * FROM STUDENT where ID='$id'");
+while($row3 = mysql_fetch_array($result3))
+{
+$id=$row3['ID'];
+$password=$row3['PASSWORD'];
+$name=$row3['NAME'];
+$gender=$row3['GENDER'];
+$level=$row3['LEVEL'];
+$contact=$row3['CONTACT'];
+$email=$row3['EMAIL'];
+$matric=$row3['MATRIC'];
+$course=$row3['COURSE'];
+$cgpa=$row3['CGPA'];
+$status=$row3['STATUS'];
+}
+?>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>STUDENT Profile</title>
+</head>
+
+<body>
+<fieldset>
+<table width="398" border="0" align="center" cellpadding="0">
+
+  <div align="right"><a href="index2.php">logout</a></div>
+  <legend align = "center">STUDENT INFORMATION</legend>
+
+  <tr>
+    <td width="82" valign="top"><div align="left">NAME:</div></td>
+    <td width="165" valign="top"><?php echo $name ?></td>
+  </tr>
+   <tr>
+      <td width="82" valign="top"><div align="left">GENDER:</div></td>
+      <td width="165" valign="top"><?php echo $gender ?></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="left">LEVEL:</div></td>
+    <td valign="top"><?php echo $level ?></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="left">CONTACT:</div></td>
+    <td valign="top"><?php echo $contact ?></td>
+  </tr>
+  <tr>
+    <td valign="top"><div align="left">EMAIL: </div></td>
+    <td valign="top"><?php echo $email ?></td>
+  </tr>
+   <tr>
+      <td width="82" valign="top"><div align="left">MATRIC:</div></td>
+      <td width="165" valign="top"><?php echo $matric ?></td>
+  </tr>
+   <tr>
+      <td width="82" valign="top"><div align="left">COURSE:</div></td>
+      <td width="165" valign="top"><?php echo $course ?></td>
+  </tr>
+   <tr>
+      <td width="82" valign="top"><div align="left">CGPA:</div></td>
+      <td width="165" valign="top"><?php echo $cgpa ?></td>
+  </tr>
+   <tr>
+      <td width="82" valign="top"><div align="left">STATUS:</div></td>
+      <td width="165" valign="top"><?php echo $status ?></td>
+  </tr>
+</table>
+</fieldset>
+</body>
+</html>
